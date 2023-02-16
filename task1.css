@@ -1,0 +1,131 @@
+.main {
+  width: 100%;
+}
+
+.classified p {
+  color: yellow;
+  font-size: 18px;
+  background-color: black;
+  display: inline-block;
+  margin-left: 45px;
+}
+.cars {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.car {
+  width: 20%;
+  background-color: #f5f5f5;
+  margin: 2%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.car:hover {
+  box-shadow: 0 4px 8px 0 #1a726633, 0 6px 20px 0 rgba(33, 79, 117, 0.19);
+}
+
+.carpic img {
+  width: 100%;
+  object-fit: contain;
+  position: relative;
+  border-radius: 10px 10px 0 0;
+}
+
+.camera {
+  position: absolute;
+  top: 84px;
+  background-color: #bdb8af;
+  opacity: 0.9;
+  border-radius: 5px;
+  width: 50px;
+}
+
+.camera img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
+}
+.camera span {
+  color: white;
+  margin-left: 5px;
+  top: -7px;
+  position: relative;
+}
+
+.km {
+  position: absolute;
+  left: 14%;
+  top: 44%;
+  background-color: antiquewhite;
+  color: black;
+  width: 50px;
+  font-weight: bold;
+  padding: 2px;
+}
+.myan {
+  position: absolute;
+  color: antiquewhite;
+  font-size: 13px;
+  left: 21%;
+  top: 45%;
+}
+figcaption {
+  margin-left: 10px;
+}
+
+.name {
+  color: #ff002d;
+  font-weight: bold;
+}
+
+figcaption span {
+  font-weight: bold;
+}
+
+.highlight {
+  color: blue;
+}
+
+@media (max-width:768px){
+  .car {
+    width: 44%;
+}
+.main {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.classified p {
+  font-size: 24px;
+  margin-left: 0;
+  text-transform: uppercase;
+}
+}
+
+@media (max-width:320px){
+  .main {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.classified p {
+  font-size: 20px;
+  margin-left: 0;
+  text-transform: uppercase;
+}
+.cars {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.car {
+  width: 100%;
+  margin: 4%;
+}
+}
